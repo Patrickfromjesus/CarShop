@@ -4,6 +4,7 @@ Projeto Carshop desenvolvido durante a formação do curso da Trybe. Aplicação
 ## endpoints `/cars` e `/motorcycles`
 Ao utilizá-lo com o método <strong>POST</strong>, o usuário pode adicionar um veículo no banco de dados, passando um body do tipo:
   <h3>Carros</h3>
+  
 ```json
 {
   "model": "Marea",
@@ -16,6 +17,7 @@ Ao utilizá-lo com o método <strong>POST</strong>, o usuário pode adicionar um
 }
 ```
   <h3>Motos</h3>
+  
 ```json
 {
   "model": "Honda Cb 600f Hornet",
@@ -30,6 +32,7 @@ Ao utilizá-lo com o método <strong>POST</strong>, o usuário pode adicionar um
 Listar todos os carros existentes com o método <strong>GET</strong> ou ainda listar veículos específicos pelo id (com o endpoint <storng>/<id></strong>)
 O retorno será do tipo:
   <h3>Carros</h3>
+  
 ```json
         [
           {
@@ -67,6 +70,7 @@ e
         }
 ```
   <h3>Motos</h3>
+  
 ```json
 [
   {
