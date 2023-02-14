@@ -38,7 +38,7 @@ O retorno será do tipo:
             "seatsQty": 5
           }
         ]
-      ```
+```
 e
 ```json
         {
