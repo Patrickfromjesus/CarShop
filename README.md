@@ -29,7 +29,7 @@ Ao utilizá-lo com o método <strong>POST</strong>, o usuário pode adicionar um
   "engineCapacity": 600
 }
 ```
-Listar todos os carros existentes com o método <strong>GET</strong> ou ainda listar veículos específicos pelo id (com o endpoint <storng>/<id></strong>)
+Listar todos os carros existentes com o método <strong>GET</strong> ou ainda listar veículos específicos pelo id (com o endpoint <storng>/id</strong>)
 O retorno será do tipo:
   <h3>Carros</h3>
   
