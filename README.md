@@ -1,8 +1,9 @@
 # CarShop
 Projeto Carshop desenvolvido durante a formação do curso da Trybe. Aplicação do CRUD com Mongoose com Typescript. A finalidade era treinar o paradigma da Programação Orientada a Objetos e TDD.
 
-## endpoint `/cars`
-Ao utilizá-lo com o método <strong>POST</strong>, o usuário pode adicionar um carro no banco de dados, passando um body do tipo:
+## endpoints `/cars` e `/motorcycles`
+Ao utilizá-lo com o método <strong>POST</strong>, o usuário pode adicionar um veículo no banco de dados, passando um body do tipo:
+  <h3>Carros</h3>
 ```json
 {
   "model": "Marea",
@@ -14,8 +15,21 @@ Ao utilizá-lo com o método <strong>POST</strong>, o usuário pode adicionar um
   "seatsQty": 5
 }
 ```
-Listar todos os carros existentes com o método <strong>GET</strong> ou ainda listar carros específicos pelo id (com o endpoint <storng>/cars/<id></strong>)
+  <h3>Motos</h3>
+```json
+{
+  "model": "Honda Cb 600f Hornet",
+  "year": 2005,
+  "color": "Yellow",
+  "status": true,
+  "buyValue": 30.000,
+  "category": "Street",
+  "engineCapacity": 600
+}
+```
+Listar todos os carros existentes com o método <strong>GET</strong> ou ainda listar veículos específicos pelo id (com o endpoint <storng>/<id></strong>)
 O retorno será do tipo:
+  <h3>Carros</h3>
 ```json
         [
           {
@@ -52,23 +66,60 @@ e
           "seatsQty": 5
         }
 ```
-Para deleter um carro, pode-se utilizar o método <strong>DELETE</strong>, passando o id por parâmetro. Nesse caso não há retorno, apenas o statusCode `204`.
+  <h3>Motos</h3>
+```json
+[
+  {
+    "id": "634852326b35b59438fbea2f",
+    "model": "Honda Cb 600f Hornet",
+    "year": 2005,
+    "color": "Yellow",
+    "status": true,
+    "buyValue": 30.000,
+    "category": "Street",
+    "engineCapacity": 600
+  },
+  {
+    "id": "634852326b35b59438fbea31",
+    "model": "Honda Cbr 1000rr",
+    "year": 2011,
+    "color": "Orange",
+    "status": true,
+    "buyValue": 59.900,
+    "category": "Street",
+    "engineCapacity": 1000
+  }
+]
+```
+e
+```json
+{
+  "id": "634852326b35b59438fbea31",
+  "model": "Honda Cbr 1000rr",
+  "year": 2011,
+  "color": "Orange",
+  "status": true,
+  "buyValue": 59.900,
+  "category": "Street",
+  "engineCapacity": 1000
+}
+```
 
-## endpoint `/motorcycles`
+Para deleter um veículo, pode-se utilizar o método <strong>DELETE</strong>, passando o id por parâmetro. Nesse caso não há retorno, apenas o statusCode `204`.
 
 <details>
-  <summary><strong>Diagrama Entidade Relacionamento do projeto</strong></summary><br />
+  <summary><strong>Avaliação</strong></summary><br />
 
-  <img src="images/diagram-der.png" height="200px" />
+  <img src="images/imagem-projeto.png" height="200px" />
 
 </details>
 
 ## 🛠️ tecnologias e frameworks utilizados
 * [Node.js (Express)](http://expressjs.com/);
 * [Typescript](https://www.typescriptlang.org/pt/docs/);
-* [Mongoose](https://jwt.io/introduction/);
+* [Mongoose](https://mongoosejs.com/);
 * [dotenv](https://www.dotenv.org/docs);
-* [MongoDB](https://dev.mysql.com/doc/);
+* [MongoDB](https://www.mongodb.com/);
 
 ## ✒️ Autores
 Nste projeto, tanto a aplicação, quanto os testes da mesma foram realizados por mim, [Patrick Gomes](https://www.linkedin.com/in/patrickgomesc/).
