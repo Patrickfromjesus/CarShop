@@ -40,7 +40,7 @@ O retorno será do tipo:
         ]
       ```
 e
-``json
+```json
         {
           "id": "634852326b35b59438fbea2f",
           "model": "Marea",
@@ -51,7 +51,7 @@ e
           "doorsQty": 4,
           "seatsQty": 5
         }
-      ```
+```
 Para deleter um carro, pode-se utilizar o método <strong>DELETE</strong>, passando o id por parâmetro. Nesse caso não há retorno, apenas o statusCode `204`.
 
 ## endpoint `/motorcycles`
